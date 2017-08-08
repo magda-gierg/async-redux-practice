@@ -1,8 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Post = ({title}) => (
-  <div>{title}</div>
+const Post = ({title, author, created}) => (
+  <div>
+    {author}
+    -> {title}
+    -> {created}
+  </div>
 )
 
 Post.propTypes = {
